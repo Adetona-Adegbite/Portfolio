@@ -1,0 +1,355 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+}
+.main img {
+}
+.tree {
+  width: 50px;
+  height: auto;
+}
+.pageOne {
+  background: #c7d6d5;
+  width: 100%;
+  height: 100vh;
+}
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 20px;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav-bar {
+  text-align: right;
+  margin-right: 20px;
+}
+.nav-bar a {
+  padding: 0 30px;
+  color: #0c120c;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: bolder;
+}
+.main {
+  width: 84%;
+  /* border: 2px solid black; */
+  height: 80%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.main .profile {
+  margin: auto;
+  position: relative;
+  top: 10%;
+  /* border: 2px solid black; */
+  line-height: 3rem;
+}
+#job-title {
+  font-size: 1.5rem;
+}
+.main .profile span {
+  color: #c20114;
+  font-family: "Space Mono", monospace;
+  font-size: 3.5rem;
+}
+.main .profile p {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 3rem;
+}
+
+.buttons button {
+  background: #ecebf3;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  padding: 5px 20px;
+  margin: 0 20px;
+}
+.skill-button {
+  transition: 0.3s;
+}
+.skill-button:hover {
+  color: white;
+  background: black;
+  outline-style: solid;
+  outline-offset: 5px;
+}
+
+.pagetwo {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+}
+.selector {
+  width: 20%;
+  height: 40px;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #c7d6d5;
+}
+.selector-button {
+  background: none;
+  border: none;
+}
+.clicked {
+  background: #c7d6d5;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: 2s;
+}
+.info-meet {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  font-weight: nones;
+
+  /* border: 2px solid black; */
+}
+.info-meet h2,
+.info-skills h2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+}
+.info-skills {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  line-height: 1.2rem;
+  /* border: 2px solid black; */
+}
+.info-meet p,
+.info-skills li {
+  font-family: "Space Mono", monospace;
+}
+.list {
+  /* border: 2px solid black; */
+  width: 50%;
+  font-size: 1.2rem;
+  margin: 60px auto;
+  text-align: left;
+}
+.list li {
+  margin-top: 20px;
+}
+.list h2 {
+  text-align: center;
+}
+.pagethree {
+  width: 100%;
+  height: 100%;
+  background: #b2cdcd;
+  text-align: center;
+  padding: 30px;
+  /* border: 2px solid black; */
+}
+#myProjects {
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.pagethree h2 {
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.pagethree p {
+  font-family: "Share Tech Mono", monospace;
+}
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 93%;
+  margin: auto;
+  /* border: 2px solid black; */
+}
+.card {
+  border: 1px solid black;
+  margin: 50px auto;
+  max-width: 650px;
+}
+.card img {
+  width: 650px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+  }
+
+  .nav-bar {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .main .profile p {
+    font-size: 1rem;
+  }
+
+  .main .profile span {
+    font-size: 2rem;
+  }
+  .main {
+    height: 400px;
+  }
+  #job-title {
+    font-size: 20px;
+  }
+
+  .main .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    margin: 10px 0;
+  }
+
+  .pagetwo .selector {
+    width: 50%;
+  }
+
+  .info-meet,
+  .info-skills {
+    width: 90%;
+  }
+  .buttons {
+    margin-top: 40px;
+  }
+
+  .list {
+    width: 80%;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-bar a {
+    display: block;
+    padding: 10px;
+  }
+  #pageOne {
+    height: 500px;
+  }
+
+  .main .profile p {
+    font-size: 1.8rem;
+  }
+
+  .main .profile span {
+    font-size: 2.2rem;
+  }
+
+  .buttons button {
+    font-size: 0.8rem;
+    padding: 3px 15px;
+  }
+  #job-title {
+    font-size: 20px;
+    padding: 0;
+  }
+  .info-meet,
+  .info-skills {
+    width: 100%;
+  }
+  .main {
+    height: 200px;
+  }
+  .buttons {
+    margin-top: 40px;
+  }
+
+  .list {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .card {
+    margin: 30px auto;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .nav-bar a {
+    padding: 5px 15px;
+  }
+
+  .main .profile p {
+    font-size: 1rem;
+  }
+
+  .main .profile span {
+    font-size: 20px;
+  }
+  #job-title {
+    font-size: 13px;
+  }
+  .clicked {
+    padding: 5px;
+  }
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  background-color: #0c120c;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+  }
+
+  .nav-bar {
+    text-align: center;
+    margin: 20px 0;
+    background: white;
+  }
+  .nav-bar a {
+    border-bottom: 2px solid black;
+  }
+  .hamburger {
+    display: block;
+    margin-left: 90%;
+    /* padding: 10%; */
+    position: relative;
+    top: 3%;
+    right: 2%;
+  }
+
+  .active {
+    display: block;
+  }
+}
