@@ -53,3 +53,11 @@ function scrollToSection(sectionId) {
     section.scrollIntoView({ behavior: "smooth" });
   }
 }
+document.querySelector(".skill-button").addEventListener("click", function () {
+  document.getElementById("button1").classList.remove("clicked");
+  buttonList = [];
+  document.getElementById("button2").classList.add("clicked");
+
+  $(".info-meet").fadeOut(500);
+  $(".info-skills").fadeIn(1000);
+});
