@@ -251,8 +251,10 @@ body {
     display: block;
     padding: 10px;
   }
-  
 
+  .pageOne {
+    height: 90vh;
+  }
   .main .profile p {
     font-size: 1.8rem;
   }
